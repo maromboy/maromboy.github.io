@@ -229,13 +229,38 @@
             });
 
             // popup on precinct click
-            map.on('click', 'precincts-lyr', (e) => {
-                var html = get_precinct_html(e)
+            map.on('click',  (e) => {
+                const features = map.queryRenderedFeatures(e.point);
+                console.log(features);
+                var htmlPrecinct = '';
+                var htmlDistrict = '';
+                for (var feature of features){
+                    if (feature.layer.id === "precincts-lyr"){
+                        htmlPrecinct += get_precinct_html(feature.properties);
+                    }
+
+                    if (feature.layer.id === "district-lyr"){
+                        htmlDistrict += get_district_html(feature.properties);
+                    }
+
+                }
+
+                var html = htmlPrecinct + htmlDistrict;
+
                 new mapboxgl.Popup()
                     .setLngLat(e.lngLat)
                     .setHTML(html)
                     .addTo(map);
+                            
             });
+
+            // map.on('click', 'district-lyr', (e) => {
+            //     var htmlx = get_district_html(e)
+            //     new mapboxgl.Popup()
+            //         .setLngLat(e.lngLat)
+            //         .setHTML(htmlx)
+            //         .addTo(map);
+            // });
 
             // Change the cursor to a pointer 
             map.on('mouseenter', 'precincts-lyr', () => {
@@ -246,6 +271,8 @@
             map.on('mouseleave', 'precincts-lyr', () => {
                 map.getCanvas().style.cursor = '';
             });
+
+            
 
             map.addControl(new mapboxgl.NavigationControl(),'top-left');
         });
