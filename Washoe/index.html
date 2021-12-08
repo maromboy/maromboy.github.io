@@ -7,12 +7,6 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
-    <script type="text/javascript" src="precincts.js"></script>
-    <script type="text/javascript" src="precinctPoints.js"></script>
-    <script type="text/javascript" src="precinctLines.js"></script>
-    <script type="text/javascript" src="districts.js"></script>
-    <script type="text/javascript" src="districtPoints.js"></script>
-    <script type="text/javascript" src="districtLines.js"></script>
     <script type="text/javascript" src="precinctHtml.js"></script>
     
     <style>
@@ -68,6 +62,10 @@
             <span style="background-color:rgb(0, 0, 0); height:19px; width:19px;"> 
                 <span style="margin: 2px; background-color:rgb(161, 161, 161); height:15px; width:15px"> 
                 </span></span>Precincts</div>
+        <div>
+            <span style="background-color:rgb(255,0,0); height:19px; width:19px;"> 
+                <span style="margin: 2px; background-color:rgb(243, 150, 150); height:15px; width:15px"> 
+                </span></span>Elementary School Zones</div>
             
     </div>
     <script>
@@ -83,12 +81,35 @@
         });
 
         map.on('load', () => {
-            //precintcts
+            //sources
             map.addSource('precincts', {
                 'type': 'geojson',
-                'data': washoePrecincts
+                'data': "Precincts.geojson"
             });
 
+            map.addSource('districts', {
+                'type': 'geojson',
+                'data': "State_Assembly.geojson"
+            });
+
+            map.addSource('school-zones', {
+                'type': 'geojson',
+                'data': "Elementary_School_Zones.geojson"
+            });
+
+            // BOUNDARY school
+            map.addLayer({
+                'id': 'schoolzone-lyr',
+                'type': 'fill',
+                'source': 'school-zones',
+                'paint': {
+                    'fill-color': 'rgba(255, 0, 0, 0.2)',
+                    'fill-outline-color': 'rgba(255, 0, 0, 1)',
+                    'fill-opacity': 0
+                }
+            });
+
+            //BOUNDARY precinct
             map.addLayer({
             'id': 'precincts-lyr',
             'type': 'fill',
@@ -102,13 +123,7 @@
             }
             });
 
-            // DISTRICTS
-            //boundaries
-            map.addSource('districts', {
-                'type': 'geojson',
-                'data': washoeDistricts
-            });
-
+            // BOUNDARY disctrict
             map.addLayer({
                 'id': 'district-lyr',
                 'type': 'fill',
@@ -122,16 +137,11 @@
                 }
             });
 
-            // PRECINCT Lines
-            map.addSource('precinct-lines', {
-                'type': 'geojson',
-                'data': precinctLines
-            });
-
+            // LINE precinct
             map.addLayer({
-                'id': 'prec-lines',
+                'id': 'precinctsLine',
                 'type': 'line',
-                'source': 'precinct-lines',
+                'source': 'precincts',
                 'layout': {
                     'line-join': 'round',
                     'line-cap': 'round'
@@ -142,38 +152,44 @@
                 }
             });
 
-
-            // DISTRICT LINES
-            map.addSource('district-lines', {
-                'type': 'geojson',
-                'data': districtLines
+            // LINES school
+            map.addLayer({
+                'id': 'schoolLine',
+                'type': 'line',
+                'source': 'school-zones',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                'paint': {
+                    'line-color': 'rgba(255, 0, 0, 1)',
+                    'line-width': { stops: [[7, 1], [15, 3]] }
+                }
             });
 
+
+            // LINE district
             map.addLayer({
-                'id': 'dist-lines',
+                'id': 'districtsLine',
                 'type': 'line',
-                'source': 'district-lines',
+                'source': 'districts',
                 'layout': {
                     'line-join': 'round',
                     'line-cap': 'round'
                 },
                 'paint': {
                     'line-color': 'rgba(200, 100, 240, 1)',
-                    'line-width': 2
+                    'line-width': 3
                 }
             });
 
-            //LABLES
-            //district
-            map.addSource('label', {
-                'type': 'geojson',
-                'data': districtPoints
-            });
 
+
+            // LABLE district
             map.addLayer({
-                'id': 'laybel-lyr',
+                'id': 'districtsLabel',
                 'type': 'symbol',
-                'source': 'label',
+                'source': 'districts',
                 'paint': {
                     "text-color": "#5D2E6F",
                     "text-halo-width": 1,
@@ -191,16 +207,12 @@
                         ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']]
                 }
             });
-            // precincts
-            map.addSource('precinctLabel', {
-                'type': 'geojson',
-                'data': precinctPoints
-            });
 
+            // LABEL precincts 
             map.addLayer({
-                'id': 'precinct-labels',
+                'id': 'precinctLabel',
                 'type': 'symbol',
-                'source': 'precinctLabel',
+                'source': 'precincts',
                 'paint': {
                     "text-color": "black",
                     "text-halo-width": 1,
@@ -208,6 +220,38 @@
                 },
                 'layout': {
                     'text-field': ['get', 'PRECINCT'],
+                    'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                    'text-radial-offset': 0.5,
+                    'text-justify': 'auto',
+                    "text-size": {
+                        "stops": [
+                            [0, 0],
+                            [10, 0],
+                            [11, 10],
+                            [12, 12],
+                            [14, 18]
+                        ]},
+                    'text-ignore-placement': true,
+                    'text-allow-overlap': true,
+                    'icon-image': ['get', 'icon'],
+                    'text-font': [
+                        'literal',
+                        ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']]
+                }
+            });
+
+            // LABEL school
+            map.addLayer({
+                'id': 'schoolLabel',
+                'type': 'symbol',
+                'source': 'school-zones',
+                'paint': {
+                    "text-color": "red",
+                    "text-halo-width": 1,
+                    "text-halo-color": "#fff",
+                },
+                'layout': {
+                    'text-field': ['get', 'NAME'],
                     'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
                     'text-radial-offset': 0.5,
                     'text-justify': 'auto',
