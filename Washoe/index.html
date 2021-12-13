@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Washoe Precincts and Districts</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
     <script type="text/javascript" src="popupHtml.js"></script>
    
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
@@ -73,7 +73,7 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoibXJvbWJveSIsImEiOiJja3ZpdW40MGo4bTR0MnhwZ3Y4c3ZxNGN4In0.f5eypCYjLC_pLqfI8rEy0Q';
 
-
+        
         // Create a new map.
         const map = new mapboxgl.Map({
             container: 'map',
@@ -81,6 +81,8 @@
             center: [-119.75, 40.5],
             zoom: 6
         });
+        
+        let hoveredStateId = null;
 
         map.on('load', () => {
             //sources
@@ -99,6 +101,21 @@
                 'data': "Elementary_School_Zones.geojson"
             });
 
+            map.addSource('precinctLabel', {
+                'type': 'geojson',
+                'data': "Precinct_Label.geojson"
+            });
+
+            map.addSource('districtLabel', {
+                'type': 'geojson',
+                'data': "State_Assembly_Label.geojson"
+            });
+
+            map.addSource('school-zoneLabel', {
+                'type': 'geojson',
+                'data': "Elementary_School_Zone_Label.geojson"
+            });
+
             
             // BOUNDARY school
             map.addLayer({
@@ -106,7 +123,7 @@
                 'type': 'fill',
                 'source': 'school-zones',
                 'paint': {
-                    'fill-color': 'rgba(255, 0, 0, 0)',
+                    'fill-color': 'rgb(255, 0, 0)',
                     'fill-outline-color': 'rgba(255, 0, 0, 1)',
                     'fill-opacity': 0
                 }
@@ -118,11 +135,13 @@
             'type': 'fill',
             'source': 'precincts',
             'paint': {
-                'fill-color': 'rgba(20, 10, 24, 0.0)',
-                'fill-outline-color': 'rgba(20, 10, 24, 1)',   
-                'fill-opacity': {
-                        stops: [[7, 1], [14, 0]]
-                }
+                'fill-color': 'rgb(20, 10, 24)',
+                // 'fill-outline-color': 'rgba(20, 10, 24, 1)',   
+                'fill-opacity': ['case',
+                                    ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
+               // {
+                //         stops: [[7, 1], [14, 0]]
+                // }
             }
             });
 
@@ -134,9 +153,7 @@
                 'paint': {
                     'fill-color': 'rgba(200, 100, 240, 0.0)',
                     'fill-outline-color': 'rgba(200, 100, 240, 1)',
-                    'fill-opacity': {
-                    stops: [[7, 1], [14, 0]]
-                }
+                    'fill-opacity': 0
                 }
             });
 
@@ -192,7 +209,7 @@
             map.addLayer({
                 'id': 'districtsLabel',
                 'type': 'symbol',
-                'source': 'districts',
+                'source': 'districtLabel',
                 'paint': {
                     "text-color": "#5D2E6F",
                     "text-halo-width": 1,
@@ -215,7 +232,7 @@
             map.addLayer({
                 'id': 'precinctLabel',
                 'type': 'symbol',
-                'source': 'precincts',
+                'source': 'precinctLabel',
                 'paint': {
                     "text-color": "black",
                     "text-halo-width": 1,
@@ -247,7 +264,7 @@
             map.addLayer({
                 'id': 'schoolLabel',
                 'type': 'symbol',
-                'source': 'school-zones',
+                'source': 'school-zoneLabel',
                 'paint': {
                     "text-color": "rgb(0, 199, 60)",
                     "text-halo-width": 1,
@@ -257,23 +274,41 @@
                     'text-field': ['get', 'NAME'],
                     'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
                     'text-radial-offset': 0.5,
-                    'text-justify': 'auto',
+                    'text-justify': 'center',
                     "text-size": {
                         "stops": [
                             [0, 0],
                             [7, 0],
-                            [11, 10],
-                            [12, 12],
-                            [14, 18]
+                            [11, 14],
+                            [12, 16],
+                            [14, 24]
                         ]},
-                    'text-ignore-placement': true,
-                    'text-allow-overlap': true,
+                    'text-ignore-placement': false,
+                    'text-allow-overlap': false,
                     'icon-image': ['get', 'icon'],
                     'text-font': [
                         'literal',
                         ['DIN Offc Pro Italic', 'Arial Unicode MS Regular']]
                 }
             });
+
+            // map.on('mouseenter', 'precincts-lyr', (e) => {
+            //     if (e.features.length > 0) {
+            //         if (hoveredStateId !== null) {
+            //             console.log('hello')
+            //             map.setFeatureState(
+            //                 { source: 'precincts', id: hoveredStateId },
+            //                 { hover: false }
+            //                 );
+            //             }
+            //             console.log(e.features[0])
+            //             hoveredStateId = e.features[0].properties.PRECINCT;
+            //             map.setFeatureState(
+            //                 { source: 'precincts', id: hoveredStateId },
+            //                 { hover: true }
+            //             );
+            //     }
+            // });
 
             // popup on precinct click
             map.on('click',  (e) => {
@@ -322,6 +357,7 @@
             map.addControl(new mapboxgl.NavigationControl(),'top-left');
 
         });
+
     </script>
 
 </body>
