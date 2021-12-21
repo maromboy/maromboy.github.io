@@ -135,10 +135,10 @@
             'type': 'fill',
             'source': 'precincts',
             'paint': {
-                'fill-color': 'rgb(20, 10, 24)',
-                // 'fill-outline-color': 'rgba(20, 10, 24, 1)',   
-                'fill-opacity': ['case',
-                                    ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
+                'fill-color': 'rgba(20, 10, 24, 0)',
+                'fill-outline-color': 'rgba(20, 10, 24, 1)',   
+                // 'fill-opacity': ['case',
+                //                     ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
                // {
                 //         stops: [[7, 1], [14, 0]]
                 // }
@@ -278,7 +278,7 @@
                     "text-size": {
                         "stops": [
                             [0, 0],
-                            [7, 0],
+                            [8, 0],
                             [11, 14],
                             [12, 16],
                             [14, 24]
