@@ -8,6 +8,7 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
     <script type="text/javascript" src="popupHtml.js"></script>
+    <script type="text/javascript" src="captains.js"></script>
    
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
@@ -135,10 +136,10 @@
             'type': 'fill',
             'source': 'precincts',
             'paint': {
-                'fill-color': 'rgb(20, 10, 24)',
-                // 'fill-outline-color': 'rgba(20, 10, 24, 1)',   
-                'fill-opacity': ['case',
-                                    ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
+                'fill-color': 'rgba(20, 10, 24,0)',
+                'fill-outline-color': 'rgba(20, 10, 24, 1)', 
+                // 'fill-opacity': ['case',
+                //                     ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
                // {
                 //         stops: [[7, 1], [14, 0]]
                 // }
@@ -321,6 +322,7 @@
                     if (feature.layer.id === "precincts-lyr"){
                        htmlPrecinct = get_precinct_html(feature.properties);
                        featureCount +=1;
+                    //    console.log(cap[feature.properties.PRECINCT]);
                     }
 
                     if (feature.layer.id === "district-lyr"){
