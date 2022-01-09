@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27238799999998,
+          37.891877000000079
+        ]
+      },
+      "properties": {
+        "OBJECTID": 1,
+        "Type": "Start",
+        "Name": "Start",
+        "Notes": "The start of the street. Not necessarily the start of Tim's dream.<br><br> <a href='https://www.google.com/maps/@37.8918657,-122.2723562,3a,75y,65.84h,90t/data=!3m7!1e1!3m5!1srXZsUp5zPqgEIPfQcTQVEQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DrXZsUp5zPqgEIPfQcTQVEQ%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D60.3906%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26774299999994,
+          37.866684000000078
+        ]
+      },
+      "properties": {
+        "OBJECTID": 2,
+        "Type": "Place",
+        "Name": "Shattuck and Durrant",
+        "Notes": "<a href='https://www.google.com/maps/place/Shattuck+Ave+%26+Durant+Ave,+Berkeley,+CA+94704/@37.8666931,-122.2676522,3a,75y,355.16h,90t/data=!3m7!1e1!3m5!1sLPL4TLuOdLJpHx7QTntV_A!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DLPL4TLuOdLJpHx7QTntV_A%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D355.1577%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857e9d2e5be0f9:0x13d25f86deeb7c31!8m2!3d37.8666989!4d-122.2676075' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25927163799997,
+          37.869536822000043
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "Type": "Point of Interest",
+        "Name": "Sproul Plaza",
+        "Notes": "<a href='https://www.google.com/maps/@37.8692117,-122.2592209,3a,75y,69.5h,90t/data=!3m8!1e1!3m6!1sAF1QipN6dNSL51EnHxpceGzvFmfyNKeDFUhlmv7Iv_zO!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN6dNSL51EnHxpceGzvFmfyNKeDFUhlmv7Iv_zO%3Dw203-h100-k-no-pi-0-ya65.66083-ro-0-fo100!7i8704!8i4352' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25900099999996,
+          37.861387000000036
+        ]
+      },
+      "properties": {
+        "OBJECTID": 4,
+        "Type": "Place",
+        "Name": "Telegraph and Derby",
+        "Notes": "<a href='https://www.google.com/maps/place/Telegraph+Ave+%26+Derby+St,+Berkeley,+CA+94705/@37.8614132,-122.2589494,3a,75y,185.02h,90t/data=!3m7!1e1!3m5!1s0JxEa8Z83dQf7nl0mZZPHQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D0JxEa8Z83dQf7nl0mZZPHQ%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D185.02347%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m5!3m4!1s0x80857c2c8f704a83:0xd40702dbbf726712!8m2!3d37.8614041!4d-122.258906' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25881199999998,
+          37.866919000000053
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "Type": "Place",
+        "Name": "Telegraph and Channing",
+        "Notes": "<a href='https://www.google.com/maps/place/Telegraph+Ave+%26+Channing+Way,+Berkeley,+CA+94704/@37.8669349,-122.2588032,3a,75y,1.81h,73.93t/data=!3m7!1e1!3m5!1sZFJWyXkQkDsP1kCeD_Uz9w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DZFJWyXkQkDsP1kCeD_Uz9w%26cb_client%3Dsearch.gws-prod.gps%26w%3D211%26h%3D120%26yaw%3D261.2777%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857c2f24281f95:0x4c92c550fcdac4d2!8m2!3d37.8669249!4d-122.2588171' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25972999999999,
+          37.856181000000049
+        ]
+      },
+      "properties": {
+        "OBJECTID": 6,
+        "Type": "Place",
+        "Name": "Telegraph and Ashby",
+        "Notes": "<a href='https://www.google.com/maps/place/Ashby+Ave+%26+Telegraph+Ave,+Berkeley,+CA+94705/@37.8562423,-122.2596998,3a,75y,318.12h,94.07t/data=!3m7!1e1!3m5!1sRiywyx4h06RIk6vPy0-jFA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DRiywyx4h06RIk6vPy0-jFA%26cb_client%3Dsearch.gws-prod.gps%26w%3D360%26h%3D120%26yaw%3D187.2787%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857dd38813a555:0x904cb107363decbd!8m2!3d37.8561853!4d-122.2596611' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26915999999994,
+          37.854629000000045
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "Type": "Place",
+        "Name": "Adeline and Ashby",
+        "Notes": "<a href='https://www.google.com/maps/place/Ashby+Ave+%26+Adeline+St,+Berkeley,+CA+94703/@37.8547864,-122.2690437,3a,75y,121.65h,90t/data=!3m7!1e1!3m5!1sMnTd0Gm5ZipQobF577FIGQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DMnTd0Gm5ZipQobF577FIGQ%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D121.64538%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857e7e4f282b35:0x729f8b3d263942b4!8m2!3d37.8547666!4d-122.2689264' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27175399999999,
+          37.847084000000052
+        ]
+      },
+      "properties": {
+        "OBJECTID": 8,
+        "Type": "Place",
+        "Name": "Adeline turns into Martin Lurther King Jr",
+        "Notes": "<a href='https://www.google.com/maps/place/Adeline+St+%26+Stanford+Ave,+Berkeley,+CA+94608/@37.8464656,-122.2724771,3a,75y,35.93h,90t/data=!3m7!1e1!3m5!1sw-y45J7hrnLIoYfm3G9KnQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Dw-y45J7hrnLIoYfm3G9KnQ%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D35.926033%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857e7a12e88071:0x1661ee6fdecf2f86!8m2!3d37.8464756!4d-122.2724719' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26957399999998,
+          37.838894000000039
+        ]
+      },
+      "properties": {
+        "OBJECTID": 9,
+        "Type": "Place",
+        "Name": "Martin Luther King Jr and 54th",
+        "Notes": "<a href='https://www.google.com/maps/place/54th+St+%26+Martin+Luther+King+Jr+Way,+Oakland,+CA+94609/@37.8389396,-122.2692029,3a,75y,260.86h,90t/data=!3m7!1e1!3m5!1sSbEb0Ty7c4JM1XyRyog_CA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DSbEb0Ty7c4JM1XyRyog_CA%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D260.8607%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857e74ed9d2fe7:0x9667f529d360fa0d!8m2!3d37.8389357!4d-122.2693192' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27153399999997,
+          37.838648000000035
+        ]
+      },
+      "properties": {
+        "OBJECTID": 10,
+        "Type": "Place",
+        "Name": "Genoa and 54th",
+        "Notes": "<a href='https://www.google.com/maps/place/54th+St+%26+Genoa+St,+Oakland,+CA+94608/@37.8386644,-122.2715575,3a,75y,170.35h,90t/data=!3m7!1e1!3m5!1slmhH_fJ0DkI0U7o91JD32w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DlmhH_fJ0DkI0U7o91JD32w%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D170.35124%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x80857e7379666633:0x3bb338afb789cb0a!8m2!3d37.838645!4d-122.2715392' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27374399999997,
+          37.849375000000066
+        ]
+      },
+      "properties": {
+        "OBJECTID": 11,
+        "Type": "Place",
+        "Name": "Harmon Street",
+        "Notes": "<a href='https://www.google.com/maps/@37.8484808,-122.2736159,3a,75y,114.31h,90t/data=!3m7!1e1!3m5!1se2zLZuiOYHvcykrlPfddyw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3De2zLZuiOYHvcykrlPfddyw%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D119.77339%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.25899399999997,
+          37.867816000000062
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "Type": "Place",
+        "Name": "Telegraph and Durant",
+        "Notes": "Telegraphy is a one-way Northbound street from Dwight to Bancroft<br><br><a href='https://www.google.com/maps/place/Telegraph+Ave+%26+Durant+Ave,+Berkeley,+CA+94704/@37.8678138,-122.2590129,3a,75y,261.31h,90t/data=!3m7!1e1!3m5!1s0ODEKi13UcPsrg7E8fkKww!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D0ODEKi13UcPsrg7E8fkKww%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D261.3091%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m13!1m7!3m6!1s0x80857c2f47e733ef:0xa31a0bc21d29d3b5!2sTelegraph+Ave+%26+Durant+Ave,+Berkeley,+CA+94704!3b1!8m2!3d37.8678154!4d-122.259018!3m4!1s0x80857c2f47e733ef:0xa31a0bc21d29d3b5!8m2!3d37.8678154!4d-122.259018' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.28152099999994,
+          37.848357000000078
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "Type": "End",
+        "Name": "End",
+        "Notes": "Possible end to Tim's sojourn. End of Harmon street going West. <br><br><a href='https://www.google.com/maps/place/37%C2%B050'54.1%22N+122%C2%B016'53.4%22W/@37.8484058,-122.2813344,3a,75y,347.38h,90t/data=!3m7!1e1!3m5!1sYQ5MrUzGtlfUEZz6tkuDOQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DYQ5MrUzGtlfUEZz6tkuDOQ%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D347.37534%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m5!3m4!1s0x0:0xda003dcf8083386b!8m2!3d37.8483639!4d-122.2814918' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.27336399999996,
+          37.845537000000036
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "Type": "Place",
+        "Name": "Follow the BART tracks",
+        "Notes": "No BART tracks here unless he meant the crosswalk between 3 different bus stations. <br><br><a href='https://www.google.com/maps/@37.8455843,-122.2733311,3a,75y,294.11h,76.97t/data=!3m6!1e1!3m4!1sYrYRtFKBhxOvWxqu8DL5Gg!2e0!7i16384!8i8192' target=_blank> See It</a>"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.26862999999997,
+          37.84994400000005
+        ]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "Type": null,
+        "Name": "Harmon turns into 65th",
+        "Notes": "Possible end to Tim's journey. Harm ends going East. Berkley border with Oakland. Changes from Harmon to 65th <br><br><a href='https://www.google.com/maps/place/37%C2%B050'59.8%22N+122%C2%B016'07.5%22W/@37.8499425,-122.2687808,3a,75y,163.85h,90t/data=!3m7!1e1!3m5!1sSNFKueRDHnGgNfCjukZi8g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DSNFKueRDHnGgNfCjukZi8g%26cb_client%3Dsearch.gws-prod.gps%26w%3D86%26h%3D86%26yaw%3D163.85468%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192!4m13!1m7!3m6!1s0x0:0x57b1b9843276c5b2!2zMzfCsDUwJzU5LjgiTiAxMjLCsDE2JzA3LjUiVw!3b1!8m2!3d37.8499519!4d-122.2687587!3m4!1s0x0:0x57b1b9843276c5b2!8m2!3d37.8499519!4d-122.2687587' target=_blank> See It</a>"
+      }
+    }
+  ]
+}
