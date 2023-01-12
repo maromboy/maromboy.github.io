@@ -136,13 +136,9 @@
             'type': 'fill',
             'source': 'precincts',
             'paint': {
-<<<<<<< HEAD
+
                 'fill-color': 'rgba(20, 10, 24,0)',
                 'fill-outline-color': 'rgba(20, 10, 24, 1)', 
-=======
-                'fill-color': 'rgba(20, 10, 24, 0)',
-                'fill-outline-color': 'rgba(20, 10, 24, 1)',   
->>>>>>> ab224ab9d97f6203cc22a06759d911d0c1d2a90e
                 // 'fill-opacity': ['case',
                 //                     ['boolean', ['feature-state', 'hover'], false], 1, 0.5]
                // {
@@ -315,7 +311,7 @@
             //             );
             //     }
             // });
-
+            var cap = captains;
             // popup on precinct click
             map.on('click',  (e) => {
                 const features = map.queryRenderedFeatures(e.point);
@@ -327,7 +323,7 @@
                     if (feature.layer.id === "precincts-lyr"){
                        htmlPrecinct = get_precinct_html(feature.properties);
                        featureCount +=1;
-                    //    console.log(cap[feature.properties.PRECINCT]);
+                    console.log(cap[feature.properties.PRECINCT]);
                     }
 
                     if (feature.layer.id === "district-lyr"){
@@ -352,6 +348,10 @@
             map.on('mouseenter', 'precinctsLine', () => {
                 map.getCanvas().style.cursor = 'pointer';
             });
+            map.on('mousexit', 'precinctsLine', () => {
+                map.getCanvas().style.cursor = '';
+            });
+           
            
             
 

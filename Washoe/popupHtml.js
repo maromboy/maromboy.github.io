@@ -8,7 +8,7 @@ function get_precinct_html(properties){
     html += '<br> <a href="mailto:someone@example.com">Send email</a>'
     html += '<br>'+ cap[properties.PRECINCT] + '<br>'
     html += '</div><br> ';
-    console.log(cap[properties.PRECINCT]);
+
     return html
 };
 

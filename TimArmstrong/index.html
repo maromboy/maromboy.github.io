@@ -3,102 +3,185 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tim Armstrong - Sad but True</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
-   
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
 
-    <style>        body {
+
+    <script type="text/javascript" src="Route.js"></script>
+    <link rel="stylesheet" href="TimArmstrong.css">
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+        type="text/css">
+
+    <style>
+        body {
             margin: 0;
             padding: 0;
         }
 
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
 
-        .legend {
-            background-color: #fff;
-            border-radius: 3px;
-            bottom: 30px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-            padding: 10px;
-            position: absolute; 
-            right: 10px;
-            z-index: 1;
-        }
-
-        .legend div span {
-
-            display: inline-block;
-            height: 10px;
-            margin-right: 5px;
-            width: 10px;
-        }
-
-        .mapboxgl-popup {
-            max-width: 400px;
-            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        }
     </style>
+
 </head>
 
-<body>
-    <div id="map"></div>
+<body>   
+        <div class="header"></div>
+        <div id="map">
+        </div>
+        
 
-    <div class="legend">
-        <p style="padding-top:0px; margin-top: 0px; font-size: 15px;"><a href="https://genius.com/Transplants-sad-but-true-lyrics" target=_blank><strong>Sad But True - Transplants</strong></a></p>
-            
-    </div>
+
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoibXJvbWJveSIsImEiOiJja3ZpdW40MGo4bTR0MnhwZ3Y4c3ZxNGN4In0.f5eypCYjLC_pLqfI8rEy0Q';
 
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/satellite-streets-v9',
-            center: [-122.28, 37.86],
-            zoom: 13
+            center: [-122.28, 37.855],
+            zoom: 14,
+            pitch:68,
+            bearing:-23
         });
-        
+
         let hoveredStateId = null;
 
+        const route = pathway;
+        const lineDistance = turf.length(route.features[0]);
+        const steps = 800;
+        const arc = []
+
+        for (let i = 0; i < lineDistance; i += lineDistance / steps) {
+            const segment = turf.along(route.features[0], i);
+            arc.push(segment.geometry.coordinates);
+        }
+
+        route.features[0].geometry.coordinates = arc;
+
+        let counter = 0;
+
+        const busRide = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'properties': {},
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [route.features[0].geometry.coordinates]
+                    }
+                }
+            ]
+        };
+// MAP #################################################################################
         map.on('load', () => {
-            // map.loadImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeB2QZAKjnRD9YwM_LkPgzRi78TEuBcI-gjw&usqp=CAU', (error, image) => {
-            // if (error) throw error;
-            // // Add the loaded image to the style's sprite with the ID 'kitten'.
-            // map.addImage('green', image);
+            map.addSource('mapbox-dem', {
+                'type': 'raster-dem',
+                'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+                'tileSize': 512,
+                'maxzoom': 14
+            });
+            // add the DEM source as a terrain layer with exaggerated height
+            map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+
+            map.loadImage(
+                'TimHead.png',
+                (error, image) => {
+                    if (error) throw error;
+
+                    map.addImage('timHead', image);
+                }
+            );
+
+            map.addSource('busRide', {
+                'type': 'geojson',
+                'data': busRide
+            });
+
+            map.addSource('route', {
+                'type': 'geojson',
+                'data': route
+            });
+
+            map.addLayer({
+                'id': 'route',
+                'source': 'route',
+                'type': 'line',
+                'paint': {
+                    'line-width': 0,
+                    'line-color': '#007cbf'
+                }
+            });
+
+
+            function animate() {
+                const start =
+                    route.features[0].geometry.coordinates[
+                    counter >= steps ? counter - 1 : counter
+                    ];
+                const end =
+                    route.features[0].geometry.coordinates[
+                    counter >= steps ? counter : counter + 1
+                    ];
+                if (!start || !end) return;
+
+                // Update point geometry to a new position based on counter denoting
+                // the index to access the arc
+                busRide.features[0].geometry.coordinates =
+                    route.features[0].geometry.coordinates[counter];
+
+                // Calculate the bearing to ensure the icon is rotated to match the route arc
+                // The bearing is calculated between the current point and the next point, except
+                // at the end of the arc, which uses the previous point and the current point
+                busRide.features[0].properties.bearing = turf.bearing(
+                    turf.point(start),
+                    turf.point(end)
+                );
+
+                // Update the source with this new data
+                map.getSource('busRide').setData(busRide);
+
+                // Request the next frame of animation as long as the end has not been reached
+                if (counter < steps) {
+                    requestAnimationFrame(animate);
+                }
+
+                counter = counter + 1;
+            }
+
+            // document.getElementById('replay').addEventListener('click', () => {
+            //     // Set the coordinates of the original point back to origin
+            //     busRide.features[0].geometry.coordinates = origin;
+
+            //     // Update the source layer
+            //     map.getSource('busRide').setData(busRide);
+
+            //     // Reset the counter
+            //     counter = 0;
+
+            //     // Restart the animation
+            //     animate(counter);
             // });
 
-            // map.loadImage(
-            //     'https://docs.mapbox.com/mapbox-gl-js/assets/cat.png',
-            //     (error, image) => {
-            //     if (error) throw error;
-                
-            //     // Add the image to the map style.
-            //     map.addImage('cat', image);});
+            // Start the animation
 
+            animate(counter);
 
-            //sources
-            map.addSource('timeArmstrongLines', {
-                'type': 'geojson',
-                'data': "TimArmstrong.geojson"
-            });
 
             map.addSource('timPointOfInterest', {
                 'type': 'geojson',
                 'data': "SadButTrue.geojson"
             });
 
+            map.addSource('timeArmstrongLines', {
+                'type': 'geojson',
+                'data': "Route.geojson"
+            });
 
-            // LINE precinct
-
+            ;
+// Layers ##############################################################
             map.addLayer({
                 'id': 'timLines',
                 'type': 'line',
@@ -109,8 +192,24 @@
                 },
                 'paint': {
                     'line-color': '#58DE5E',
-                    'line-width': 6 //{ stops: [[7, 1], [15, 3]] }
+                    'line-width': 12 //{ stops: [[7, 1], [15, 3]] }
                 }
+            });
+
+
+
+            map.addLayer({
+                'id': 'timPOI',
+                'type': 'circle',
+                'source': 'timPointOfInterest',
+                // 'layout': {'icon-image': ['match',['get','Type'],  'Start',"marker","marker"]}
+                'paint': {
+                    'circle-radius': 6,
+                    'circle-color': '#e6e6e6',//'#0C8111',
+                    'circle-stroke-width':3,
+                    'circle-stroke-color':'#58DE5E'
+                }
+
             });
 
             map.addLayer({
@@ -123,89 +222,52 @@
                 },
                 'paint': {
                     'line-color': '#0C8111',
-                    'line-width': 3 //{ stops: [[7, 1], [15, 3]] }
+                    'line-width': 6, //{ stops: [[7, 1], [15, 3]] }
                 }
             });
 
-
-
             map.addLayer({
-                'id': 'timPOI1',
-                'type': 'circle',
-                'source': 'timPointOfInterest',
-                // 'layout': {'icon-image': ['match',['get','Type'],  'Start',"marker","marker"]}
-                'paint': {
-                    'circle-radius': 8,
-                    
-                    'circle-color': [
-                    'match',
-                    ['get','Type'],
-                    'Start','#58DE95',
-                    'Place','#58DEDC',
-                    'Point of Interest','#AB58DE',
-                    'End','#FBA9D2',
-                    "#4B4749"
-                ],
-            }
-
+                'id': 'busRide',
+                'type': 'symbol',
+                'source': 'busRide', // reference the data source
+                'layout': {
+                    'icon-image': 'timHead', // reference the image
+                    'icon-size': 0.5
+                }
             });
 
-            // LABLE district
-            map.addLayer({
-                'id': 'timPOI',
-                'type': 'circle',
-                'source': 'timPointOfInterest',
-                // 'layout': {'icon-image': ['match',['get','Type'],  'Start',"marker","marker"]}
-                'paint': {
-                    'circle-radius': 6,
-                    
-                'circle-color': [
-                    'match',
-                    ['get','Type'],
-                    'Start','green',
-                    'Place','blue',
-                    'Point of Interest','purple',
-                    'End','red',
-                    "#ccc"
-                ],
-           }
-
-            });
-
-            // popup on precinct click
-            map.on('click',  (e) => {
+            map.on('click', (e) => {
+                console.log(e);
                 const features = map.queryRenderedFeatures(e.point);
-                var html ;
-                var featureCount=0;
-                for (var feature of features){
-                    if (feature.layer.id === "timPOI"){
+                var html;
+                var featureCount = 0;
+                for (var feature of features) {
+                    if (feature.layer.id === "timPOI") {
                         var color = "green";
                         if (feature.properties.Type == 'Start') {
                             color = "yellow";
                         }
-                        else if (feature.properties.Type == 'End')
-                        {
-                            color="red";
+                        else if (feature.properties.Type == 'End') {
+                            color = "red";
                         }
                         var html = '<div style="width: 175px;">';
-                        html +=  '<div style="color:white;background-color:' +color +';"><strong>' + feature.properties.Name + '</strong></div>';
-                        console.log(feature.properties.Notes);
-                        if (feature.properties.Notes !== undefined)
-                            {html +=  '<br><div>' + feature.properties.Notes + '</div>';}
+                        html += '<div style="color:white;background-color:' + color + ';"><strong>' + feature.properties.Name + '</strong></div>';
+
+                        if (feature.properties.Notes !== undefined) { html += '<br><div>' + feature.properties.Notes + '</div>'; }
                         html += '</div><br> ';
 
-                       featureCount +=1;
+                        featureCount += 1;
                     }
                 }
 
-                if (featureCount >=1) {
+                if (featureCount >= 1) {
 
-                new mapboxgl.Popup()
+                    new mapboxgl.Popup()
                         .setLngLat(e.lngLat)
                         .setHTML(html)
                         .setMaxWidth("500px")
                         .addTo(map);
-                }             
+                }
             });
 
             map.on('mouseenter', 'timPOI', () => {
@@ -213,22 +275,11 @@
             });
             map.on('mouseleave', 'timPOI', () => {
                 map.getCanvas().style.cursor = '';
-            });           
-           
-            
+            })
 
-            map.addControl(
-                new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                    mapboxgl: mapboxgl
-                }), 'top-left');
-
-            map.addControl(new mapboxgl.NavigationControl(),'top-left');
 
         });
-
     </script>
-
 </body>
 
 </html>
