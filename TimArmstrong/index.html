@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link rel="icon" type="image/x-icon" href="images/TimHead.ico">
+
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
 
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <script type="text/javascript" src="Route.js"></script>
     <link rel="stylesheet" href="TimArmstrong.css">
@@ -16,34 +20,80 @@
         href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
         type="text/css">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-
-    </style>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>   
-        <div class="header"></div>
-        <div id="map">
+<body>
+    <section id="map_box_container">
+        <div id="map"></div>
+    </section>
+    <div class="row">
+        <div class="map-overlay top col-sm-12 col-md-3 col-lg-3">
+            <div class="map-overlay-inner">
+                <button data-toggle="collapse" id="get-collpased" onclick="switchIcon('get-collpased','intro')" >
+                    <i class="icon-double-angle-up"></i>
+                </button>
+                <div class="collapse show" id="intro">
+                    <img src="TRANSPLANTS.jpg" alt="The Transplants" id="logo">
+    
+                    <div class="intro">
+                        <p style="text-align: center; font-weight: bold; font-size: larger;">Sad but True</p>
+                        <p>This song is about friends who have passed away. The song isn't long enough for Skinhead Rob name all those who have passed away.
+                            <blockquote>
+                                "It sad but true but the list is too long<br>If I had to name you all it wouldn't be fit in this song."
+                            </blockquote>
+                            <span><strong>What does fit into this is song?</strong></span><br>
+                            Tim Armstrong listing every Berkeley intersection<br>that he passed in a dream.
+                        </p>
+                    </div>
+                    <div class="container">
+                        <button id="replay" type="button" class="btn btn-dark">Replay</button>
+                    </div>  
+                </div>
+            </div>
+            <div class="map-overlay-lower">
+                <button data-toggle="collapse" id="street-view" onclick="switchIcon('street-view','googlestreet')" >
+                    <i class="icon-double-angle-up"></i>
+                </button>
+                <div class="collapse show" id="googlestreet">
+                    <div id="popup"></div>
+                    <div id="streetview"></div>
+                </div>
+            </div>
+    
         </div>
-        
+    </div>
 
 
     <script>
+        function switchIcon(cName, child){
+            console.log(cName);
+            var inHtml = document.getElementById(cName).innerHTML;
+            var introElement = document.getElementById(child);
+            if (inHtml.search("down") > 0)
+            {
+                document.getElementById(cName).innerHTML = '<i class="icon-double-angle-up"></i>';
+                introElement.style.display = "block";
+            }
+            else {
+                document.getElementById(cName).innerHTML = '<i class="icon-double-angle-down"></i>';
+                introElement.style.display = "none";
+            }
+        }
+
         mapboxgl.accessToken = 'pk.eyJ1IjoibXJvbWJveSIsImEiOiJja3ZpdW40MGo4bTR0MnhwZ3Y4c3ZxNGN4In0.f5eypCYjLC_pLqfI8rEy0Q';
 
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/satellite-streets-v9',
-            center: [-122.28, 37.855],
-            zoom: 14,
-            pitch:68,
-            bearing:-23
+            center: [-122.27, 37.855],
+            zoom: 13.5,
+            pitch: 68,
+            bearing: -23
         });
 
         let hoveredStateId = null;
@@ -59,7 +109,7 @@
         }
 
         route.features[0].geometry.coordinates = arc;
-
+        const origin = route.features[0].geometry.coordinates;
         let counter = 0;
 
         const busRide = {
@@ -75,19 +125,21 @@
                 }
             ]
         };
-// MAP #################################################################################
+        // MAP #################################################################################
         map.on('load', () => {
+            map.resize();
+
             map.addSource('mapbox-dem', {
                 'type': 'raster-dem',
                 'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
                 'tileSize': 512,
                 'maxzoom': 14
             });
-            // add the DEM source as a terrain layer with exaggerated height
+
             map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
             map.loadImage(
-                'TimHead.png',
+                'images/TimHead.png',
                 (error, image) => {
                     if (error) throw error;
 
@@ -127,23 +179,16 @@
                     ];
                 if (!start || !end) return;
 
-                // Update point geometry to a new position based on counter denoting
-                // the index to access the arc
                 busRide.features[0].geometry.coordinates =
                     route.features[0].geometry.coordinates[counter];
 
-                // Calculate the bearing to ensure the icon is rotated to match the route arc
-                // The bearing is calculated between the current point and the next point, except
-                // at the end of the arc, which uses the previous point and the current point
                 busRide.features[0].properties.bearing = turf.bearing(
                     turf.point(start),
                     turf.point(end)
                 );
 
-                // Update the source with this new data
                 map.getSource('busRide').setData(busRide);
 
-                // Request the next frame of animation as long as the end has not been reached
                 if (counter < steps) {
                     requestAnimationFrame(animate);
                 }
@@ -151,133 +196,112 @@
                 counter = counter + 1;
             }
 
-            // document.getElementById('replay').addEventListener('click', () => {
-            //     // Set the coordinates of the original point back to origin
-            //     busRide.features[0].geometry.coordinates = origin;
-
-            //     // Update the source layer
-            //     map.getSource('busRide').setData(busRide);
-
-            //     // Reset the counter
-            //     counter = 0;
-
-            //     // Restart the animation
-            //     animate(counter);
-            // });
-
-            // Start the animation
+            document.getElementById('replay').addEventListener('click', () => {
+                busRide.features[0].geometry.coordinates = origin;
+                map.getSource('busRide').setData(busRide);
+                counter = 0;
+                animate(counter);
+            });
 
             animate(counter);
-
 
             map.addSource('timPointOfInterest', {
                 'type': 'geojson',
                 'data': "SadButTrue.geojson"
             });
 
-            map.addSource('timeArmstrongLines', {
+            map.addSource('timArmstrongLines', {
                 'type': 'geojson',
                 'data': "Route.geojson"
             });
 
-            ;
-// Layers ##############################################################
+            // Layers ##############################################################
             map.addLayer({
-                'id': 'timLines',
+                'id': 'outerLine',
                 'type': 'line',
-                'source': 'timeArmstrongLines',
+                'source': 'timArmstrongLines',
                 'layout': {
                     'line-join': 'round',
                     'line-cap': 'round'
                 },
                 'paint': {
-                    'line-color': '#58DE5E',
-                    'line-width': 12 //{ stops: [[7, 1], [15, 3]] }
+                    'line-color': '#8f8f8f',
+                    'line-width': 12
                 }
             });
-
-
 
             map.addLayer({
                 'id': 'timPOI',
                 'type': 'circle',
                 'source': 'timPointOfInterest',
-                // 'layout': {'icon-image': ['match',['get','Type'],  'Start',"marker","marker"]}
                 'paint': {
-                    'circle-radius': 6,
-                    'circle-color': '#e6e6e6',//'#0C8111',
-                    'circle-stroke-width':3,
-                    'circle-stroke-color':'#58DE5E'
+                    'circle-radius': 3,
+                    'circle-color': '#e6e6e6',
+                    'circle-stroke-width': 4,
+                    'circle-stroke-color': '#c92424'
                 }
 
             });
 
             map.addLayer({
-                'id': 'timLines1',
+                'id': 'innerLine',
                 'type': 'line',
-                'source': 'timeArmstrongLines',
+                'source': 'timArmstrongLines',
                 'layout': {
                     'line-join': 'round',
                     'line-cap': 'round'
                 },
                 'paint': {
-                    'line-color': '#0C8111',
-                    'line-width': 6, //{ stops: [[7, 1], [15, 3]] }
+                    'line-color': '#121212',
+                    'line-width': 6,
                 }
             });
 
             map.addLayer({
                 'id': 'busRide',
                 'type': 'symbol',
-                'source': 'busRide', // reference the data source
+                'source': 'busRide', 
                 'layout': {
-                    'icon-image': 'timHead', // reference the image
+                    'icon-image': 'timHead', 
                     'icon-size': 0.5
                 }
             });
 
-            map.on('click', (e) => {
-                console.log(e);
+            const popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            });
+
+            map.on('mouseenter', 'timPOI', (e) => {
+                map.getCanvas().style.cursor = 'pointer';
                 const features = map.queryRenderedFeatures(e.point);
-                var html;
-                var featureCount = 0;
+                let info;
+                var featureCount = features.length;
                 for (var feature of features) {
                     if (feature.layer.id === "timPOI") {
-                        var color = "green";
-                        if (feature.properties.Type == 'Start') {
-                            color = "yellow";
-                        }
-                        else if (feature.properties.Type == 'End') {
-                            color = "red";
-                        }
-                        var html = '<div style="width: 175px;">';
-                        html += '<div style="color:white;background-color:' + color + ';"><strong>' + feature.properties.Name + '</strong></div>';
-
-                        if (feature.properties.Notes !== undefined) { html += '<br><div>' + feature.properties.Notes + '</div>'; }
-                        html += '</div><br> ';
-
-                        featureCount += 1;
+                        info = feature.properties.Name;
                     }
                 }
 
                 if (featureCount >= 1) {
-
-                    new mapboxgl.Popup()
-                        .setLngLat(e.lngLat)
-                        .setHTML(html)
-                        .setMaxWidth("500px")
+                    popup.setLngLat(e.lngLat)
+                        .setHTML(info)
                         .addTo(map);
                 }
             });
 
-            map.on('mouseenter', 'timPOI', () => {
-                map.getCanvas().style.cursor = 'pointer';
-            });
             map.on('mouseleave', 'timPOI', () => {
                 map.getCanvas().style.cursor = '';
+                popup.remove();
             })
 
+            map.on('click', 'timPOI', (e) => {
+                let notes = `<strong>${e.features[0].properties.Name}</strong><br>Lyric: ${e.features[0].properties.Notes}<br>`;
+                let streetview = `<iframe src='${e.features[0].properties.StreetView}' style='border:0;height:200px;width:100%;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>`
 
+                document.getElementById("popup").innerHTML = notes;
+                document.getElementById("streetview").innerHTML = streetview;
+            });
         });
     </script>
 </body>
