@@ -1,0 +1,3212 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.43252777777778,
+                    37.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230830_191936434.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.43252777777778,
+                    37.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230830_192241369.jpg",
+                "icon": "Data/Location.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.43252777777778,
+                    37.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230830_194559306.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.43252777777778,
+                    37.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230830_194602902.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.00945277777778,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_140916584.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.00945277777778,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_140922976.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.00945277777778,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_141331010.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.00945277777778,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_141340136.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.00945277777778,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_142800748.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96210833333333,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_144022479.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96210833333333,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_144047730.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96210833333333,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_144050716.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.96210833333333,
+                    40.432430555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_144051676.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.94295555555556,
+                    40.39639444444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_150023390.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.94295555555556,
+                    40.39639444444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_150028212.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 16,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.94295555555556,
+                    40.39639444444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_150037567.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.87198055555555,
+                    40.39639444444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_150929481.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.87198055555555,
+                    40.39639444444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_151016410.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85291666666666,
+                    40.36035833333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_152421705.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85291666666666,
+                    40.36035833333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_152422290.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85291666666666,
+                    40.36035833333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_152425656.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85291666666666,
+                    40.36035833333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_152427646.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85291666666666,
+                    40.36035833333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_152429153.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85522499999999,
+                    40.34234166666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_154812113.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85522499999999,
+                    40.34234166666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_154813321.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.85522499999999,
+                    40.34234166666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_154814167.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_164050437.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_164603849.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_164643456.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_164652904.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_164656853.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_182248153.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.77718055555556,
+                    40.216213888888895
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_182249549.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61307222222221,
+                    40.03603333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_193132084.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61307222222221,
+                    40.03603333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_193133599.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61307222222221,
+                    40.03603333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_193134302.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61307222222221,
+                    40.03603333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_193135075.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.61307222222221,
+                    40.03603333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_193136301.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_195431002.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_195433089.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_195526745.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_195533850.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_200022859.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_200026515.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.59204722222222,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_200640676.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_205844704.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_205845739.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_205909913.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210635964.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210643820.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210651004.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210726221.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210729508.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210731541.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210749526.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210752501.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_210758372.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_211448223.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_211450883.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_211454846.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_212058532.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_221212910.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_222745389.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_222802714.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.49495833333333,
+                    39.873872222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_222806121.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.28619444444445,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_234502260.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.28619444444445,
+                    40.01801666666667
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230831_234504325.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.36201666666666,
+                    39.81981944444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_145840822.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.36201666666666,
+                    39.81981944444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_145844046.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_154047821.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_154053988.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_154054952.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_154055851.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_155025890.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.24204444444445,
+                    39.837836111111116
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_155030634.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_161812540.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162115219.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162117968.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162135869.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162513344.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162527626.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_162950179.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.160925,
+                    39.909908333333334
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_163005413.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.04078055555556,
+                    39.927927777777775
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_165756816.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 87,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.04078055555556,
+                    39.927927777777775
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_165800436.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.04078055555556,
+                    39.927927777777775
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_165802666.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.04078055555556,
+                    39.927927777777775
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_165817311.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.04078055555556,
+                    39.927927777777775
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_165820433.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.0516,
+                    39.85585555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_171010036.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 92,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.0516,
+                    39.85585555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_171012987.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 93,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.0516,
+                    39.85585555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_171133660.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 94,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.0516,
+                    39.85585555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_172350202.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 95,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.0516,
+                    39.85585555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_172351007.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.03359166666667,
+                    39.81981944444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_175435647.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 99,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185733749.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 100,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185743237.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 101,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185746938.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 102,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185809566.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 103,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185810324.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 104,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185813443.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 105,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185816757.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 106,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185823812.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 107,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185826274.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 108,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185829238.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 109,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185841438.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 110,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185842888.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 111,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_185912639.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 112,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_190609747.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 113,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_190618226.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 114,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_190624033.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 115,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_190629287.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 116,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90398333333334,
+                    39.74774722222222
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191016888.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 117,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191020489.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 118,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191022036.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 119,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191510515.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 120,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191512705.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 121,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191529347.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 122,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191654803.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 123,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.88335555555557,
+                    39.72972777777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_191656734.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 124,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90959444444445,
+                    39.711711111111114
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_192331900.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 125,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.90959444444445,
+                    39.711711111111114
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_192333586.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 127,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.89181944444445,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_195454588.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 128,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.89181944444445,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_195455927.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 129,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.84216111111111,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_200846259.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 130,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.84216111111111,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_200849855.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 131,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.84216111111111,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_200851284.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 132,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.84216111111111,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_200852648.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 133,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203120146.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 134,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203121076.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 135,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203642652.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 136,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203644119.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 137,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203755876.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 138,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.79818055555555,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_203804509.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 139,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.75710555555555,
+                    39.63963888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_204318954.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 140,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.75710555555555,
+                    39.63963888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_204320323.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 141,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.75710555555555,
+                    39.63963888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_204328018.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 142,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.75710555555555,
+                    39.63963888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230901_204330638.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 143,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.75710555555555,
+                    39.63963888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_125519245.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 144,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.74239444444444,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_130805488.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 145,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.74239444444444,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_130809023.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 146,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.74239444444444,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_132055558.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 147,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.74239444444444,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_132058439.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 148,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.74239444444444,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_132123073.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 149,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.66656388888889,
+                    39.477475000000005
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135311091.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 150,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135322621.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 151,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135326799.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 152,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135438237.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 153,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135441925.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 154,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135443902.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 155,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135522092.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 156,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_135529557.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 157,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140129874.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 158,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140134289.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 159,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.61096944444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140348143.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 160,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140354114.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 161,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140357507.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 162,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140358519.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 163,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140449592.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 164,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140450503.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 165,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140453664.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 166,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140455317.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 167,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140520217.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 168,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.58760833333334,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_140526996.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 169,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.47080277777778,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_144112081.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 170,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.47080277777778,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_144113476.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 173,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.40020833333334,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_170712979.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 174,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.40020833333334,
+                    39.675675
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_170714161.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 175,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_180335793.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 176,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_180338880.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 177,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181219753.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 178,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181222335.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 179,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181223535.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 180,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181400297.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 181,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.44997777777778,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181657058.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 182,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.26876388888888,
+                    39.62161944444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_181700172.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 183,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.26876388888888,
+                    39.62161944444445
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_183251705.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 184,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.18650833333334,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_194904992.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 185,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.18650833333334,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_195219369.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 186,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.18650833333334,
+                    39.693691666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_195621462.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 187,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.07551666666666,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_202713507.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 188,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.07551666666666,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_202717063.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 189,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.07551666666666,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_202722290.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 190,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.07551666666666,
+                    39.65765555555556
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_202722546.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 193,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.92099444444445,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_211551375.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 194,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.92099444444445,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_211556931.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 195,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.92099444444445,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_211601600.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 196,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.92099444444445,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_212833317.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 197,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.874225,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_214454208.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 198,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.82745277777778,
+                    39.60360277777778
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230902_215141213.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 199,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.85397222222221,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_135057233.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 200,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.85397222222221,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_135059206.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 201,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.85397222222221,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_135534706.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 202,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.85397222222221,
+                    39.58558333333333
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_135536311.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 203,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.84004444444444,
+                    39.531530555555555
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_140002331.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 206,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.73214166666666,
+                    39.351350000000004
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_154624337.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 207,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.73866666666667,
+                    39.31531388888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_155013132.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 208,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.73866666666667,
+                    39.31531388888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_155701484.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 209,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.73866666666667,
+                    39.31531388888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_162314459.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 210,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.60905,
+                    39.135133333333336
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_182708359.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 211,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.60905,
+                    39.135133333333336
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_182712481.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 212,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.47649722222222,
+                    39.09909722222223
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_185846166.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 213,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.39397777777778,
+                    39.04504444444444
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_200858441.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 214,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.39397777777778,
+                    39.04504444444444
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_200901388.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 215,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_203717219.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 216,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204012363.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 217,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204017006.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 218,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204019568.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 219,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204023363.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 220,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.23508333333334,
+                    39.027025
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204134210.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 221,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.24210833333333,
+                    38.99098888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204138575.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 222,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.24210833333333,
+                    38.99098888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204139750.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 223,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.24210833333333,
+                    38.99098888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204141448.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 224,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.24210833333333,
+                    38.99098888888889
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_204309743.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 225,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.22245277777778,
+                    38.972972222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_205550714.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 226,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.22245277777778,
+                    38.972972222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_205552954.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 227,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.22245277777778,
+                    38.972972222222225
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_205555531.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 228,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.09411944444444,
+                    38.91891666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_213342446.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 229,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.09411944444444,
+                    38.91891666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_213343448.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 230,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.09411944444444,
+                    38.91891666666666
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_213643871.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 231,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214055869.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 232,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214112124.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 233,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214113242.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 234,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214602058.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 235,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214603188.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 236,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214644349.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 237,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_214648095.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 238,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_215242932.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 239,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_215808705.jpg"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 240,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.0514,
+                    38.9009
+                ]
+            },
+            "properties": {
+                "image": "Photos/GAPCO/PXL_20230903_215811294.jpg"
+            }
+        }
+    ]
+}

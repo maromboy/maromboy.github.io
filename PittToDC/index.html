@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Cycling GAP C&O 
+    </title>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link rel="icon" type="image/x-icon" href="images/TimHead.ico">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+        type="text/css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <div id="map"></div>
+
+</body>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFyb21ib3kiLCJhIjoiNXFHeTFhNCJ9.dn-ONC2F8pWatYUVMViOSg';
+
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/maromboy/clpyjq3h2007u01qm6lis78hv',
+        center: [-79.0, 39.65],
+        zoom: 6.2,
+        pitch: 0,
+        bearing: 0
+    });
+
+    const popup = new mapboxgl.Popup({
+        // closeButton: false,
+        // closeOnClick: false
+    });
+
+    function enableTerrain() {
+
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 2 });
+        map.setPitch(65.5);
+        document.getElementById("bigger").disabled = false;
+        document.getElementById("terrain").disabled = true;
+        document.getElementById("disableTerrain").disabled = false;
+
+    }
+
+    function exeggerateTerrain() {
+        document.getElementById("terrain").disabled = false;
+        map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 5 });
+    }
+
+    function disableTerrain() {
+        document.getElementById("terrain").disabled = false;
+        map.setTerrain();
+    }
+
+    map.on('load', () => {
+        map.resize();
+
+        map.addSource('mapbox-dem', {
+            'type': 'raster-dem',
+            'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+
+        const homePosition = {
+            center: [-78.0, 39.65],
+            zoom: 6.2,
+            pitch: 0,
+            bearing: 0
+        };
+
+        class PointFeatures {
+            constructor() {
+                this.pointsEnabled = false;
+            }
+
+            togglePoints() {
+                if (this.pointsEnabled == false) {
+                    this.pointsEnabled = true;
+                    map.setLayoutProperty(
+                        'pics',
+                        'visibility',
+                        'visible'
+                    );
+
+                }
+                else {
+                    this.pointsEnabled = false;
+                    map.setLayoutProperty(
+                        'pics',
+                        'visibility',
+                        'none'
+                    );
+
+                }
+            }
+
+
+            onAdd(map) {
+                const div = document.createElement("div");
+                div.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                div.innerHTML = `<button id="points-btn"></button>`;
+                div.addEventListener("contextmenu", (e) => e.preventDefault());
+                div.addEventListener("click", () => this.togglePoints());
+                return div;
+            }
+        }
+
+
+        class HomeButton {
+            onAdd(map) {
+                const div = document.createElement("div");
+                div.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                div.innerHTML = `<button id="home-btn"></button>`;
+                div.addEventListener("contextmenu", (e) => e.preventDefault());
+                div.addEventListener("click", () => map.flyTo(homePosition));
+                return div;
+            }
+        }
+
+        class Terrain {
+            addTerrain() {
+                map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 2 });
+                document.getElementById('terrain').hidden = true;
+                document.getElementById('ex-terrain').hidden = false;
+                map.setPitch(65);
+            }
+            exaggerateTerrain() {
+                map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 5 });
+                document.getElementById('ex-terrain').hidden = true;
+                document.getElementById('removeTerrain').hidden = false;
+            }
+            removeTerrain() {
+                map.setTerrain();
+                document.getElementById('terrain').hidden = false;
+                document.getElementById('removeTerrain').hidden = true;
+            }
+
+            onAdd(map) {
+                const terrainDiv = document.createElement('div');
+                terrainDiv.id = "terrain";
+                terrainDiv.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                terrainDiv.innerHTML = `<button id="terrain-btn" ></button>`;
+                terrainDiv.addEventListener("contextmenu", (e) => e.preventDefault());
+                terrainDiv.addEventListener("click", () => { this.addTerrain() });
+
+                const exTerrainDiv = document.createElement('div');
+                exTerrainDiv.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                exTerrainDiv.id = 'ex-terrain';
+                exTerrainDiv.innerHTML = `<button id="terrain-exagg-btn" ></button>`;
+                exTerrainDiv.hidden = true;
+                exTerrainDiv.addEventListener("contextmenu", (e) => e.preventDefault());
+                exTerrainDiv.addEventListener("click", () => { this.exaggerateTerrain() });
+
+                const removeTerrain = document.createElement('div');
+                removeTerrain.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                removeTerrain.id = 'removeTerrain';
+                removeTerrain.innerHTML = `<button id="terrain-x-btn" ></button>`;
+                removeTerrain.hidden = true;
+                removeTerrain.addEventListener("contextmenu", (e) => e.preventDefault());
+                removeTerrain.addEventListener("click", () => { this.removeTerrain() });
+
+                const div = document.createElement("div");
+                div.appendChild(terrainDiv);
+                div.appendChild(exTerrainDiv);
+                div.appendChild(removeTerrain)
+
+                return div
+            }
+
+
+        }
+
+        class Title {
+            onAdd(map) {
+                const div = document.createElement("div");
+                div.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                div.innerHTML = `<h1>Cycling Pittsburg to DC<br>on the GAP and C&O</h1>`;
+
+                return div;
+            }
+        }
+
+        class ArticleLink {
+            onAdd(map) {
+                const div = document.createElement("div");
+                div.className = "mapboxgl-ctrl mapboxgl-ctrl-group";
+                div.innerHTML = `<a target="_blank" href="https://www.deseret.com/2023/9/15/23868275/gravel-bike-cycling-great-allegheny-passage-c-o-canal-father-son-secret-life"><button id="link-btn"></button></a>`;
+
+                return div;
+            }
+        }
+
+        const articleLink = new ArticleLink();
+        map.addControl(articleLink, "top-right");
+
+
+        // const title = new Title();
+        // map.addControl(title, "top-left");
+
+        const homeButton = new HomeButton();
+        map.addControl(homeButton, "bottom-right");
+
+        const terrain = new Terrain();
+        map.addControl(terrain, "bottom-right");
+
+        const picLayer = new PointFeatures();
+        map.addControl(picLayer, "bottom-right");
+
+        map.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+
+        map.addSource('photoPoints', {
+            'type': 'geojson',
+            'data': "Data/photoPoints.geojson"
+        });
+
+        map.addSource(`Path`, {
+            'type': 'geojson',
+            'data': `Data/Path.geojson`,
+            lineMetrics: true,
+        });
+
+        map.addLayer({
+            id: `path-background`,
+            type: 'line',
+            source: `Path`,
+            layout: {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            paint: {
+                'line-color': '#191900',
+                'line-width': 8,
+            }
+        });
+
+        map.addLayer({
+            id: `path`,
+            type: 'line',
+            source: `Path`,
+            layout: {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            paint: {
+                'line-color': 'yellow',
+                'line-width': 6,
+                'line-gradient': [
+                    'interpolate',
+                    ['linear'],
+                    ['line-progress'],
+                    0, '#808000',
+                    0.30, '#ffff00',
+                    1, '#ffff99'
+                ]
+            }
+        });
+
+        map.addLayer({
+            'id': 'pics',
+            'type': 'circle',
+            'source': 'photoPoints',
+            'layout': {
+                'visibility': 'none'
+            },
+            'paint': {
+                'circle-radius': 3,
+                'circle-color': 'black'
+            }
+        });
+
+        fetch('Data/Day1Marker.geojson')
+            .then((res) => res.json())
+            .then((data) => {
+                for (const f of data.features) {
+                    console.log(f);
+                    var el = document.createElement('div')
+                    el.className = 'marker-day1';
+                    new mapboxgl.Marker(el, {offset: [-55,0]})
+                        .setLngLat(f.geometry.coordinates)
+                        .addTo(map);
+                    console.log(el);
+                }
+            });
+
+            fetch('Data/Day2Marker.geojson')
+            .then((res) => res.json())
+            .then((data) => {
+                for (const f of data.features) {
+                    console.log(f);
+                    var el = document.createElement('div')
+                    el.className = 'marker-day2';
+                    new mapboxgl.Marker(el, {offset: [-55,0]})
+                        .setLngLat(f.geometry.coordinates)
+                        .addTo(map);
+                    console.log(el);
+                }
+            });
+
+            fetch('Data/Day3Marker.geojson')
+            .then((res) => res.json())
+            .then((data) => {
+                for (const f of data.features) {
+                    console.log(f);
+                    var el = document.createElement('div')
+                    el.className = 'marker-day3';
+                    new mapboxgl.Marker(el, {offset: [-55,0]})
+                        .setLngLat(f.geometry.coordinates)
+                        .addTo(map);
+                    console.log(el);
+                }
+            });
+
+            fetch('Data/Day4Marker.geojson')
+            .then((res) => res.json())
+            .then((data) => {
+                for (const f of data.features) {
+                    console.log(f);
+                    var el = document.createElement('div')
+                    el.className = 'marker-day4';
+                    new mapboxgl.Marker(el, {offset: [-55,0]})
+                        .setLngLat(f.geometry.coordinates)
+                        .addTo(map);
+                    console.log(el);
+                }
+            });
+
+            fetch('Data/DayEndMarker.geojson')
+            .then((res) => res.json())
+            .then((data) => {
+                for (const f of data.features) {
+                    console.log(f);
+                    var el = document.createElement('div')
+                    el.className = 'marker-dayend';
+                    new mapboxgl.Marker(el, {offset: [-55,0]})
+                        .setLngLat(f.geometry.coordinates)
+                        .addTo(map);
+                    console.log(el);
+                }
+            });
+       
+        map.on('click', 'pics', (e) => {
+            map.getCanvas().style.cursor = 'pointer';
+            popupIds = [];
+            const coordinates = e.features[0].geometry.coordinates.slice();
+
+            var imgIds = []
+
+            var div = document.createElement('div');
+            div.className = "slideshow-container";
+            div.id = "slideshow-container";
+
+            for (let i = 0; i < e.features.length; i++) {
+                var description = e.features[i].properties.image;
+                popupIds.push(e.features[i].id);
+                var imgId = document.createElement('div');
+                imgId.className = "mySlides"
+                imgId.id = "img" + e.features[i].id;
+                imgId.innerHTML = `<img src="${description}" onclick="nextPhoto(${e.features[i].id})" style="height:350px"/>`
+                if (i == 0) {
+                    imgId.style = "display:block";
+                }
+                else {
+                    imgId.style = "display:none";
+                }
+
+                div.appendChild(imgId);
+            }
+
+            if (e.features.length > 1) {
+                var text = document.createElement('div');
+                text.innerHTML = 'Click photo to see more';
+                text.style = "font-size:x-small"
+                div.appendChild(text);
+            }
+
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+            console.log(popupIds);
+            var popupHtml = div.outerHTML;
+            popup.setLngLat(coordinates)
+                .setHTML(popupHtml)
+                .setMaxWidth("600px")
+                .addTo(map);
+        });
+
+        map.on('mouseleave', 'pics', () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+    });
+
+    var popupIds = [];
+
+    function nextPhoto(n) {
+        console.log(popupIds);
+        var currentId = 'img' + n;
+        var idx = popupIds.indexOf(n);
+        var nextIdx = idx + 1
+
+        console.log(popupIds.length - 1);
+
+        if (nextIdx === popupIds.length) {
+            nextIdx = 0
+        }
+        var nexPicId = popupIds[nextIdx];
+        var picId = 'img' + nexPicId;
+
+        if (nexPicId !== n) {
+            document.getElementById(currentId).style.display = "none";
+            document.getElementById(picId).style.display = "block";
+        }
+
+    }
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.8662128mm"
+   height="4.0102997mm"
+   viewBox="0 0 4.8662128 4.0102997"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="mtn_exagg.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   sodipodi:docname="mtn.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="47.780012"
+     inkscape:cx="7.1891987"
+     inkscape:cy="7.4926729"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.31193,-34.479274)">
+    <g
+       id="g19150"
+       transform="matrix(0.78986228,0,0,0.78986228,0.42354811,8.0534124)">
+      <path
+         style="fill:#3a3a3a;stroke:#3a3a3a;stroke-width:0.799999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 35.955233,38.113675 2.433107,-4.010301 2.433105,4.0103 h -4.866213"
+         id="path18732" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.713108;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 37.626193,35.975672 0.762143,-1.256182 0.762144,1.256182 h -1.524287"
+         id="path19146" />
+    </g>
+  </g>
+</svg>

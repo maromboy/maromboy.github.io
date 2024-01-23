@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="75.503914mm"
+   height="28.834084mm"
+   viewBox="0 0 75.503914 28.834084"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient9410">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop9406" />
+      <stop
+         style="stop-color:#ffff99;stop-opacity:1;"
+         offset="1"
+         id="stop9408" />
+    </linearGradient>
+    <rect
+       x="33.041691"
+       y="51.646839"
+       width="81.410423"
+       height="70.494537"
+       id="rect1950" />
+    <linearGradient
+       xlink:href="#linearGradient9410"
+       id="linearGradient9414"
+       x1="17.760279"
+       y1="23.041117"
+       x2="106.25067"
+       y2="23.041117"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.67747109,0,0,0.67747109,1.5373643,2.658677)" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(0,-3.4930638)">
+    <rect
+       style="fill:#3a3a3a;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:2.86074;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26545"
+       width="75.503922"
+       height="28.834084"
+       x="0"
+       y="3.4930639" />
+    <path
+       style="fill:url(#linearGradient9414);fill-opacity:1;fill-rule:nonzero;stroke:#3a3a3a;stroke-width:0.677472;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 13.908175,8.7861015 H 57.243024 L 72.866266,18.268368 57.243024,27.750635 H 13.908175 Z"
+       id="path4475" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path25690"
+       d="M 24.408501,18.233543 A 9.6515846,9.6515846 0 0 1 14.761629,27.885127 9.6515846,9.6515846 0 0 1 5.105336,18.24297 9.6515846,9.6515846 0 0 1 14.742776,8.5819691 9.6515846,9.6515846 0 0 1 24.408482,18.21469" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#3a3a3a;stroke-width:1.75;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path842"
+       d="M 24.408501,18.233543 A 9.6515846,9.6515846 0 0 1 14.761629,27.885127 9.6515846,9.6515846 0 0 1 5.105336,18.24297 9.6515846,9.6515846 0 0 1 14.742776,8.5819691 9.6515846,9.6515846 0 0 1 24.408482,18.21469" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.28274685,0,0,0.28274685,-6.2635454,-3.5417337)"
+       id="text1948"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48px;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';text-align:center;white-space:pre;shape-inside:url(#rect1950);display:inline;fill:#3a3a3a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.77953;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="59.941406"
+         y="94.222437"
+         id="tspan26859">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.677472;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="25.603611"
+       y="16.921211"
+       id="text2064"><tspan
+         style="font-size:7.05556px;text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;stroke-width:0.677472"
+         x="25.603611"
+         y="16.921211"
+         id="tspan2794">Pittsburgh </tspan><tspan
+         style="font-size:7.05556px;text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;stroke-width:0.677472"
+         x="25.603611"
+         y="25.740662"
+         id="tspan4300" /><tspan
+         style="font-size:7.05556px;text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;stroke-width:0.677472"
+         x="25.603611"
+         y="34.560112"
+         id="tspan4250" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'Microsoft Tai Le';-inkscape-font-specification:'Microsoft Tai Le Bold';text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.677472;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       x="32.223724"
+       y="25.154016"
+       id="text2064-41"><tspan
+         style="font-size:5.64444px;text-align:start;text-anchor:start;fill:#3a3a3a;fill-opacity:1;stroke-width:0.677472"
+         x="32.223724"
+         y="25.154016"
+         id="tspan4250-5">0 Miles</tspan></text>
+  </g>
+</svg>

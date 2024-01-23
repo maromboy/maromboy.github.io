@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.map_box_container{
+    position: relative;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+
+.mapboxgl-popup-content {
+    background-color: none !important;
+    width: 100% !important;
+    text-align: center;
+}
+
+.header{
+    height:auto;
+    z-index: 10;
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: #5d6679;
+    color: #ffff99;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+}
+
+.marker-day1 {   
+    background-image: url('icon/Day1.svg'); 
+    background-size: cover;
+    width: 112px;
+    height: 44px;
+  }
+
+  .marker-day2 {   
+    background-image: url('icon/Day2.svg'); 
+    background-size: cover;
+    width: 112px;
+    height: 44px;
+  }
+  .marker-day3 {   
+    background-image: url('icon/Day3.svg'); 
+    background-size: cover;
+    width: 112px;
+    height: 44px;
+  }
+  .marker-day4 {   
+    background-image: url('icon/Day4.svg'); 
+    background-size: cover;
+    width: 112px;
+    height: 44px;
+  }
+
+  .marker-dayend {   
+    background-image: url('icon/DayEnd.svg'); 
+    background-size: cover;
+    width: 112px;
+    height: 44px;
+  }
+
+
+  #imageOptions{
+    padding-left: 15px;
+  }
+
+  #reset-bearing{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: yellow;
+    height:50px;
+    width:50px;
+  }
+
+  #imageViewer{
+    height:300;
+    z-index: 10;
+    position: fixed;
+    left:0;
+    top:0;
+    background-color: #5d6679;
+    color: #ffff99;
+    text-align: center;
+    width: 15%;
+    padding: 12px;
+  }
+
+.popupImage{
+  padding: 5px;
+
+}
+
+#terrain-btn {
+  /* width: 3em;
+  height: 3em; */
+  background: url("icon/mtn.svg?height=10") center no-repeat;
+}
+#terrain-exagg-btn {
+  /* width: 3em;
+  height: 3em; */
+  background: url("icon/mtn_exagg.svg?height=10") center no-repeat;
+}
+
+#terrain-x-btn{
+  background: url("icon/mtn_x.svg?height=10") center no-repeat;
+}
+
+#home-btn{
+  background: url("icon/home.svg?height=10") center no-repeat;
+}
+
+#points-btn{
+  background: url("icon/camera.svg?height=10") center no-repeat;
+}
+
+#link-btn{
+  background: url("icon/link.svg") center no-repeat;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+h1{
+  padding: 10px;
+  margin:10px;
+}
+
+
